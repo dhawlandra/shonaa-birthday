@@ -62,12 +62,21 @@ export default function App() {
     return () => clearInterval(interval);
   }, [showFinal]);
 
-  const moveNoButton = () => {
-    setNoPosition({
-      top: Math.random() * 80,
-      left: Math.random() * 80,
-    });
-  };
+ const emojis = ["😒", "😭", "🏃", "😂", "🚫", "😈"];
+
+const [noEmoji, setNoEmoji] = useState("😒");
+
+const moveNoButton = () => {
+  navigator.vibrate?.(100);
+  setNoPosition({
+    top: Math.random() * 75,
+    left: Math.random() * 75,
+  });
+
+  setNoEmoji(
+    emojis[Math.floor(Math.random() * emojis.length)]
+  );
+};
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
@@ -205,17 +214,36 @@ export default function App() {
             YESSS 😍
           </button>
 
-          <button
-            onMouseEnter={moveNoButton}
-            style={{
-              position: "absolute",
-              top: `${noPosition.top}%`,
-              left: `${noPosition.left}%`,
-            }}
-            className="px-10 py-4 rounded-full text-xl font-bold bg-red-500 transition-all duration-200"
-          >
-            NO 😒
-          </button>
+         <button
+  onMouseEnter={moveNoButton}
+  onClick={moveNoButton}
+  onTouchStart={moveNoButton}
+  style={{
+    position: "absolute",
+    top: `${noPosition.top}%`,
+    left: `${noPosition.left}%`,
+    transform: `
+      rotate(${Math.random() * 30 - 15}deg)
+      scale(${Math.random() * 0.3 + 0.9})
+    `,
+  }}
+  className="
+    px-10
+    py-4
+    rounded-full
+    text-xl
+    font-bold
+    bg-red-500
+    transition-all
+    duration-200
+    hover:scale-110
+    active:scale-90
+    shadow-[0_0_30px_rgba(255,0,0,0.8)]
+    animate-bounce
+  "
+>
+  NO {noEmoji}
+</button>
         </div>
       )}
 
