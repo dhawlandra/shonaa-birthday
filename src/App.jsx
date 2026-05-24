@@ -13,7 +13,39 @@ import pic7 from "./assets/pic7.jpeg";
 import pic8 from "./assets/pic8.jpeg";
 import pic9 from "./assets/pic9.jpeg";
 import pic10 from "./assets/pic10.jpeg";
-
+import pic11 from "./assets/pic11.jpeg";
+import pic12 from "./assets/pic12.jpeg";
+import pic13 from "./assets/pic13.jpeg";
+import pic14 from "./assets/pic14.jpeg";
+import pic15 from "./assets/pic15.jpeg";
+import pic16 from "./assets/pic16.jpeg";
+import pic17 from "./assets/pic17.jpeg";
+import pic18 from "./assets/pic18.jpeg";
+import pic19 from "./assets/pic19.jpeg";
+import pic20 from "./assets/pic20.jpeg";
+import pic21 from "./assets/pic21.jpeg";
+import pic22 from "./assets/pic22.jpeg";
+import pic23 from "./assets/pic23.jpeg";
+import pic24 from "./assets/pic24.jpeg";
+import pic25 from "./assets/pic25.jpeg";
+import pic26 from "./assets/pic26.jpeg";
+import pic27 from "./assets/pic27.jpeg";
+import pic28 from "./assets/pic28.jpeg";
+import pic29 from "./assets/pic29.jpeg";
+import pic30 from "./assets/pic30.jpeg";
+import pic31 from "./assets/pic31.jpeg";
+import pic32 from "./assets/pic32.jpeg";
+import pic33 from "./assets/pic33.jpeg";
+import pic34 from "./assets/pic34.jpeg";
+import pic35 from "./assets/pic35.jpeg";
+import pic36 from "./assets/pic36.jpeg";
+import pic37 from "./assets/pic37.jpeg";
+import pic38 from "./assets/pic38.jpeg";
+import pic39 from "./assets/pic39.jpeg";
+import pic40 from "./assets/pic40.jpeg";
+import pic41 from "./assets/pic41.jpeg";
+import pic43 from "./assets/pic43.jpeg";
+import pic44 from "./assets/pic44.jpeg";
 import homeMusic from "./assets/music/home.mp3";
 import galleryMusic from "./assets/music/gallery.mp3";
 import gameMusic from "./assets/music/game.mp3";
@@ -419,7 +451,63 @@ export default function App() {
 
   const audioRef = useRef(null);
   const noEmojis = ["😒","😭","🏃","😂","🚫","😈","🙈","💨"];
-  const memories = [pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9,pic10];
+  const memories = [
+  pic1,
+  
+  
+  
+  
+  
+  pic7,
+ 
+  pic9,
+  
+  
+  pic11,
+  pic3,
+
+  pic2,
+ 
+  pic12,
+  pic13,
+ pic43,
+   pic8,
+  pic18,
+  pic19,
+  pic20,
+  pic10,
+  pic21,
+  pic22,
+   pic5,
+  pic24,
+  
+  pic26,
+  
+  pic28,
+  pic29,
+  pic30,
+  pic31,
+  pic41,
+  pic4,
+  pic32,
+  pic33,
+  pic34,
+  pic35,
+  pic36,
+  pic37,
+  pic38,
+  pic16,
+  pic17,
+  pic39,
+  pic25,
+  pic40,
+  pic15,
+  pic27,
+  pic23,
+  pic14,
+  pic44
+
+];;
 
   const playMusic = useCallback(async (src) => {
     if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
@@ -534,7 +622,7 @@ export default function App() {
 
         <div className="ring-wrap anim-scale" style={{ animationDelay:"0.7s", marginTop:6 }}>
           <div className="photo-frame anim-glow" style={{ width:210, height:210 }}>
-            <img src={shonaa1} alt="Shonaa" />
+            <img src={shonaa2} alt="Shonaa" />
           </div>
         </div>
 
@@ -577,7 +665,7 @@ export default function App() {
 
         <div className="ring-wrap" style={{ margin:"8px 0" }}>
           <div className="photo-frame anim-glow" style={{ width:190, height:190 }}>
-            <img src={shonaa2} alt="Shonaa" />
+            <img src={pic35} alt="Shonaa" />
           </div>
         </div>
 
