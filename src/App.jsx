@@ -28,7 +28,7 @@ import pic22 from "./assets/pic22.jpeg";
 import pic23 from "./assets/pic23.jpeg";
 import pic24 from "./assets/pic24.jpeg";
 import pic25 from "./assets/pic25.jpeg";
-import pic26 from "./assets/pic26.jpeg";
+
 import pic27 from "./assets/pic27.jpeg";
 import pic28 from "./assets/pic28.jpeg";
 import pic29 from "./assets/pic29.jpeg";
@@ -481,7 +481,7 @@ export default function App() {
    pic5,
   pic24,
   
-  pic26,
+  
   
   pic28,
   pic29,
